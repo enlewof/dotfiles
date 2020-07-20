@@ -15,7 +15,7 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
 fi
 
 #-------------------------------------------------------------
-# Add dates and time to history command
+# Add date and time to history command
 #-------------------------------------------------------------
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
