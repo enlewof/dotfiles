@@ -1,5 +1,11 @@
 #-------------------------------------------------------------
-# Add Bash Git Prompt to bash doing to Homebrew version
+# Add Bash Completion to bash using the Homebrew version
+#-------------------------------------------------------------
+
+[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
+
+#-------------------------------------------------------------
+# Add Bash Git Prompt to bash using the Homebrew version
 #-------------------------------------------------------------
 
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
