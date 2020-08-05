@@ -1,29 +1,5 @@
-#-------------------------------------------------------------
-# Add aliases
-#-------------------------------------------------------------
+# source bashrc vs bash_profile per http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
 
-if [ -f ~/.aliases ]; then
-. ~/.aliases
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
 fi
-
-#-------------------------------------------------------------
-# Add Bash Completion to bash using the Homebrew version
-#-------------------------------------------------------------
-
-[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
-
-#-------------------------------------------------------------
-# Add Bash Git Prompt to bash using the Homebrew version
-#-------------------------------------------------------------
-
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
-  GIT_PROMPT_ONLY_IN_REPO=1
-  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
-fi
-
-#-------------------------------------------------------------
-# Add date and time to history command
-#-------------------------------------------------------------
-
-export HISTTIMEFORMAT="%d/%m/%y %T "
