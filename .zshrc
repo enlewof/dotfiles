@@ -22,12 +22,6 @@ antigen theme romkatv/powerlevel10k
 # Tell Antigen that you're done.
 antigen apply
 
-# Set hub to use github.rp-core.com by default
-export GITHUB_HOST=github.rp-core.com
-
-# Set path to include user python2 stuff for now
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
-
 # Enable zsh spellcheck and make its prompt nicer
 setopt correct
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (Yes, No, Abort, Edit) "
