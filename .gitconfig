@@ -1,0 +1,10 @@
+[user]
+	name = Allen Lew
+[help]
+	autocorrect = 1
+[pull]
+	rebase = false
+[init]
+	templateDir = /Users/allen/.git-template
+[push]
+	default = current
