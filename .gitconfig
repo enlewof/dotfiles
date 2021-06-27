@@ -1,5 +1,6 @@
 [user]
-	name = Allen Lew
+  name = Allen Lew
+  email = allen@alew.org
 [help]
 	autocorrect = 1
 [pull]
