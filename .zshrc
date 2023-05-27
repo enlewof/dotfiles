@@ -31,6 +31,14 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Add zsh completions
 autoload -Uz compinit && compinit
+autoload -U bashcompinit
+bashcompinit
+
+# Add pipx completions
+eval "$(register-python-argcomplete pipx)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `pipx` on 2023-05-27 18:57:35
+export PATH="$PATH:/Users/allen/.local/bin"
