@@ -1,0 +1,33 @@
+# Functions to make mfa work
+function mfa () {
+   local MFA_DEVICE_NAME="${1}"
+   if [[ -z "${MFA_DEVICE_NAME}" ]]; then
+     echo "USAGE: mfa MFA_DEVICE_NAME";
+   else
+     GETPASS=$(security find-generic-password -ga "${MFA_DEVICE_NAME}" -w)
+     GETCODE=$(oathtool --base32 --totp "${GETPASS}")
+     echo "${GETCODE}"|pbcopy
+     echo "$(date '+%H:%M:%S')" "${GETCODE}"
+     echo "Your new code was copied to the clipboard"
+   fi
+}
+
+function mfa_add () {
+   local MFA_DEVICE_NAME="${1}"
+   local MFA_SECRET_KEY="${2}"
+   if [[ -z "${MFA_DEVICE_NAME}" ]] || [[ -z "${MFA_SECRET_KEY}" ]]; then
+     echo "USAGE: mfa_add MFA_DEVICE_NAME MFA_SECRET_KEY";
+   else
+     security add-generic-password -a "${MFA_DEVICE_NAME}" -s "${MFA_DEVICE_NAME}" -w "${MFA_SECRET_KEY}" && \
+     echo "Secret added to keychain"
+   fi
+}
+
+function mfa_delete () {
+   local MFA_DEVICE_NAME="${1}"
+   if [[ -z "${MFA_DEVICE_NAME}" ]]; then
+     echo "USAGE: mfa_delete MFA_DEVICE_NAME";
+   else
+     security delete-generic-password -a "${MFA_DEVICE_NAME}" -s "${MFA_DEVICE_NAME}" 2>&1 >/dev/null
+   fi
+}
