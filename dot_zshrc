@@ -46,9 +46,6 @@ export SNIPKIT_HOME=~/.snipkit
 # Set AWS default to us-west-2
 export AWS_DEFAULT_REGION=us-west-2
 
-# Add pipx completions
-_evalcache register-python-argcomplete pipx
-
 # Add Zoxide
 _evalcache zoxide init zsh
 
