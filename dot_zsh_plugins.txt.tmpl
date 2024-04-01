@@ -18,4 +18,7 @@ mroth/evalcache
 {{ if eq .chezmoi.hostname "alew-mbp" }}
 # Install git jira semantic commits
 https://github.rp-core.com/alew/git-jira-semantic-commits.git branch:main
+{{ else }}
+# Install git semantic commits
+alexrochas/git-semantic-commits
 {{ end }}
