@@ -14,6 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   {
     'nvim-lualine/lualine.nvim',
+    config = function()
+      require("lualine").setup{
+        options = { theme = 'powerline' }
+      }
+    end,
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   }
 })
