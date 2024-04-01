@@ -1,0 +1,4 @@
+export EDITOR="nvim"
+
+# Created by `pipx` on 2023-05-27 18:57:35
+export PATH="$PATH:/Users/allen/.local/bin"
