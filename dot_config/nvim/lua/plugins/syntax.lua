@@ -5,6 +5,7 @@
 
 return {
   "crazy-canux/nagios.vim",
+  { "folke/neodev.nvim", opts = {} },
   {"nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
