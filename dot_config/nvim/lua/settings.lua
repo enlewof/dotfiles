@@ -7,3 +7,5 @@ vim.opt.expandtab = true  -- spaces instead of tabs
 vim.opt.tabstop = 2       -- 2 spaces for tabs
 vim.opt.shiftwidth = 2    -- 2 spaces for indentation
 
+-- Color Theme
+vim.cmd[[colorscheme tokyonight]]
