@@ -36,6 +36,7 @@ return {
         "python",
         "ruby",
         "terraform",
+        "toml",
         "yaml",
       },
     })
