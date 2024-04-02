@@ -20,14 +20,15 @@ return {
       -- ensure these language parsers are installed
       -- the first five should always be installed
       ensure_installed = {
-        "c", 
-        "lua", 
-        "vim", 
-        "vimdoc", 
+        "c",
+        "lua",
+        "vim",
+        "vimdoc",
         "query",
         "bash",
         "css",
         "dockerfile",
+        "groovy",
         "html",
         "javascript",
         "json",
