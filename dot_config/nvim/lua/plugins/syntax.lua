@@ -4,7 +4,7 @@
 -- Configuration settings provided by https://www.josean.com/posts/nvim-treesitter-and-textobjects
 
 return {
-  'crazy-canux/nagios.vim',
+  "crazy-canux/nagios.vim",
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
