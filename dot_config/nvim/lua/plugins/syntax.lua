@@ -1,4 +1,7 @@
 -- Install Syntax related plugins
+-- 1. Nagios syntax highlighting
+-- 2. Treesitter for other syntax highlighting and indentation
+-- Configuration settings provided by https://www.josean.com/posts/nvim-treesitter-and-textobjects
 
 return {
   'crazy-canux/nagios.vim',
@@ -15,10 +18,25 @@ return {
       -- enable indentation
       indent = { enable = true },
       -- ensure these language parsers are installed
+      -- the first five should always be installed
       ensure_installed = {
-        "lua",
+        "c", 
+        "lua", 
+        "vim", 
+        "vimdoc", 
+        "query",
+        "bash",
+        "css",
+        "dockerfile",
+        "html",
+        "javascript",
+        "json",
+        "markdown",
         "puppet",
-        "terraform"
+        "python",
+        "ruby",
+        "terraform",
+        "yaml",
       },
     })
   end,
