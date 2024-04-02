@@ -16,6 +16,7 @@ return {
       typescriptreact = { "eslint_d" },
       svelte = { "eslint_d" },
       lua = { "luacheck" },
+      markdown = { "markdownlint" },
       puppet = { "puppet-lint" },
       python = { "pylint" },
       terraform = { "tflint" },
