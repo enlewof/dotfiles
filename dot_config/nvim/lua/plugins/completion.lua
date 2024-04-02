@@ -1,4 +1,4 @@
--- Install Completion related plugins
+-- Install Completion and snippet related plugins
 -- From https://andrewcourter.substack.com/p/configure-linting-formatting-and
 
 return {
@@ -11,6 +11,7 @@ return {
     "saadparwaiz1/cmp_luasnip", -- for lua autocompletion
     "rafamadriz/friendly-snippets", -- useful snippets library
     "onsails/lspkind.nvim", -- vs-code like pictograms
+    "honza/vim-snippets", -- older snipmate snippets library
   },
   config = function()
     local cmp = require("cmp")
@@ -21,6 +22,9 @@ return {
 
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require("luasnip.loaders.from_vscode").lazy_load()
+
+    -- older snipmate snippets
+    require("luasnip.loaders.from_snipmate").lazy_load()
 
     cmp.setup({
       completion = {
