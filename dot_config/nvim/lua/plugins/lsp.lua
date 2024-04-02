@@ -1,4 +1,4 @@
--- Description: This file contains the configuration for the mason plugin.
+-- Description: This file contains the configurations for the mason and other lsp plugins.
 -- From https://www.josean.com/posts/neovim-linting-and-formatting
 return {
   "williamboman/mason.nvim",
