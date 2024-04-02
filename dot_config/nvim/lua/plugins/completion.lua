@@ -12,6 +12,8 @@ return {
     "rafamadriz/friendly-snippets", -- useful snippets library
     "onsails/lspkind.nvim", -- vs-code like pictograms
     "honza/vim-snippets", -- older snipmate snippets library
+    "SirVer/ultisnips", -- for ultisnips support
+    "quangnguyen30192/cmp-nvim-ultisnips", -- for ultisnips support
   },
   config = function()
     local cmp = require("cmp")
@@ -48,6 +50,7 @@ return {
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
         { name = "luasnip" }, -- snippets
+        { name = 'ultisnips' }, -- ultisnips
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
       }),
