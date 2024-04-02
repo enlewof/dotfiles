@@ -33,6 +33,7 @@ return {
         "javascript",
         "json",
         "markdown",
+        "markdown_inline",
         "puppet",
         "python",
         "ruby",
