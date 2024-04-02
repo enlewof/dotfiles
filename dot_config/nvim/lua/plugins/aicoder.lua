@@ -1,4 +1,4 @@
--- Install copilot related plugins
+-- Install ai coding related plugins
 
 -- Copilot plugin
 return {
