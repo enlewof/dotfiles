@@ -20,13 +20,12 @@ return {
   {"williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup {
-        ensure_installed = { "lua_ls", "puppet", "terraformls" },
+        ensure_installed = { "lua_ls", "terraformls" },
       }
     end,},
   {"neovim/nvim-lspconfig",
     config = function()
       require'lspconfig'.lua_ls.setup{}
-      require'lspconfig'.puppet.setup{}
       require'lspconfig'.terraformls.setup{}
     end,},
 }
