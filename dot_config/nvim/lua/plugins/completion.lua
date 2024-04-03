@@ -11,6 +11,7 @@ return {
     "saadparwaiz1/cmp_luasnip", -- for lua autocompletion
     "rafamadriz/friendly-snippets", -- useful snippets library
     "onsails/lspkind.nvim", -- vs-code like pictograms
+    "hrsh7th/cmp-nvim-lsp", -- source for nvim lsp completions
     "honza/vim-snippets", -- older snipmate snippets library
     "SirVer/ultisnips", -- for ultisnips support
     "quangnguyen30192/cmp-nvim-ultisnips", -- for ultisnips support
