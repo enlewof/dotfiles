@@ -18,7 +18,6 @@ return {
       lua = { "luacheck" },
       markdown = { "markdownlint" },
       puppet = { "puppet-lint" },
-      python = { "pylint" },
       terraform = { "tflint" },
       yaml = { "yamllint" },
     }
