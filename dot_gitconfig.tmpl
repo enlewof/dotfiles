@@ -14,11 +14,12 @@
     pager = delta
 
 [interactive]
-    diffFilter = delta --color-only
+    diffFilter = delta --diff-so-fancy
 
 [delta]
+    features = side-by-side line-numbers decorations
     navigate = true    # use n and N to move between diff sections
-
+    syntax-theme = "Monokai Extended Origin"
     # delta detects terminal colors automatically; set one of these to disable auto-detection
     # dark = true
     # light = true
