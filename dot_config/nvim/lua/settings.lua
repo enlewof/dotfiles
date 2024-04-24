@@ -9,3 +9,9 @@ vim.opt.shiftwidth = 2    -- 2 spaces for indentation
 
 -- Color Theme
 vim.cmd[[colorscheme tokyonight]]
+
+-- Remove White Space on save
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})
