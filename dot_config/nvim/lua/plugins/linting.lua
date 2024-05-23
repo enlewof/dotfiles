@@ -15,6 +15,7 @@ return {
       javascriptreact = { "eslint_d" },
       typescriptreact = { "eslint_d" },
       svelte = { "eslint_d" },
+      json = { "jsonlint" },
       lua = { "luacheck" },
       markdown = { "markdownlint" },
       puppet = { "puppet-lint" },
