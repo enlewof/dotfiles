@@ -1,6 +1,4 @@
 return {
-  'nvimdev/template.nvim',
-    cmd = {'Template','TemProject'},
-    config = function()
-    end,
+  'cvigilv/esqueleto.nvim',
+  opts = {},
 }
