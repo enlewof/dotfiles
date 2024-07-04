@@ -1,4 +1,3 @@
 return {
-  'cvigilv/esqueleto.nvim',
-  opts = {},
+  'Futarimiti/spooky.nvim',
 }
