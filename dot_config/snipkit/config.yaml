@@ -32,6 +32,7 @@ config:
       enabled: true
       # List of pet snippet files.
       libraryPaths:
+        - /Users/alew/Documents/code/personal_pet_snippets/snippet.toml
         - /Users/alew/Documents/code/work_pet_snippets/arsenal.toml
         - /Users/alew/Documents/code/work_pet_snippets/snippet.toml
       # If this list is not empty, only those snippets that match the listed tags will be provided to you.
