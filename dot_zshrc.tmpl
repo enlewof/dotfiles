@@ -41,7 +41,7 @@ export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (Yes
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Change SNIPKIT_HOME
-export SNIPKIT_HOME=~/.snipkit
+export SNIPKIT_HOME="{{ .home}}/.config/snipkit"
 
 # Add Zoxide
 _evalcache zoxide init zsh
@@ -52,9 +52,6 @@ _evalcache mise activate zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Created by `pipx` on 2023-05-27 18:57:35
-export PATH="$PATH:/Users/alew/.local/bin"
-
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/alew/.rd/bin:$PATH"
+export PATH="{{ .home}}/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
