@@ -1,6 +1,5 @@
 -- Install ai coding related plugins
 
-{{ if eq .chezmoi.hostname "alew-mbp" }}
 -- Copilot plugin
 return {
   "zbirenbaum/copilot.lua",
@@ -26,7 +25,3 @@ return {
     })
     end
 }
-{{ else}}
-return {
-}
-{{ end }}
