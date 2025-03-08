@@ -49,6 +49,9 @@ _evalcache zoxide init zsh
 # Mise init
 _evalcache mise activate zsh
 
+# Add cargo apps to path
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
