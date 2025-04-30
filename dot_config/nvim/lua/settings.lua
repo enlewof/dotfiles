@@ -18,3 +18,6 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*" },
   command = [[%s/\s\+$//e]],
 })
+
+--
+vim.g.python3_host_prog = '/Users/alew/Documents/code/python/nvim/bin/python'
