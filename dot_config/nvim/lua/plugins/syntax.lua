@@ -28,6 +28,8 @@ return {
         "bash",
         "css",
         "dockerfile",
+        "go",
+        "gotmpl",
         "groovy",
         "html",
         "javascript",
