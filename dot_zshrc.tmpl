@@ -29,7 +29,7 @@ source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
-{{ if eq .chezmoi.hostname "alew-mbp" }}
+{{ if eq .chezmoi.username "alew" }}
 # Set Vault url
 export VAULT_ADDR='https://vault.usw1.fanops.net'
 {{ end }}
