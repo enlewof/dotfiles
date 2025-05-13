@@ -17,6 +17,8 @@ return {
     end,
   dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
+  {'nvim-telescope/telescope.nvim',
+  },
   {
     "folke/noice.nvim",
     event = "VeryLazy",
