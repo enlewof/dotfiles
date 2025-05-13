@@ -31,6 +31,7 @@ return {
         "go",
         "gotmpl",
         "groovy",
+        "helm",
         "html",
         "javascript",
         "json",
