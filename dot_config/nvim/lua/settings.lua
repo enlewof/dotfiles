@@ -21,3 +21,15 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 
 -- Python Neovim Virtual Environment
 vim.g.python3_host_prog = '/Users/alew/Documents/code/python/nvim/bin/python'
+
+--File Type options
+vim.filetype.add({
+  extension = {
+    tmpl = 'gotmpl',
+  },
+  pattern = {
+    [".*/templates/.*%.tpl"] = "helm",
+    [".*/templates/.*%.ya?ml"] = "helm",
+    ["helmfile.*%.ya?ml"] = "helm",
+  },
+})
