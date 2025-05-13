@@ -19,5 +19,5 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   command = [[%s/\s\+$//e]],
 })
 
---
+-- Python Neovim Virtual Environment
 vim.g.python3_host_prog = '/Users/alew/Documents/code/python/nvim/bin/python'
