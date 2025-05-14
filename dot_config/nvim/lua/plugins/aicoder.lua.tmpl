@@ -2,26 +2,26 @@
 
 -- Copilot plugin
 return {
-  "zbirenbaum/copilot.lua",
-    enabled = enable_ai,
-    cmd = "Copilot",
-    build = ":Copilot auth",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup({
-        panel = {
-          enabled = false,
-        },
-        suggestion = {
-          enabled = true,
-          auto_trigger = true,
-          keymap = {
-            accept = "<C-j>",
-          }
-        },
-        filetypes = {
-          ["*"] = true,
-        },
-    })
-    end
+	"zbirenbaum/copilot.lua",
+	enabled = enable_ai,
+	cmd = "Copilot",
+	build = ":Copilot auth",
+	event = "InsertEnter",
+	config = function()
+		require("copilot").setup({
+			panel = {
+				enabled = false,
+			},
+			suggestion = {
+				enabled = true,
+				auto_trigger = true,
+				keymap = {
+					accept = "<C-j>",
+				},
+			},
+			filetypes = {
+				["*"] = true,
+			},
+		})
+	end,
 }

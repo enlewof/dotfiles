@@ -1,2 +1,2 @@
-require('plugins-loader')
-require('settings')
+require("plugins-loader")
+require("settings")
