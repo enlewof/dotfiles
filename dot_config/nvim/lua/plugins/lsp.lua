@@ -20,7 +20,7 @@ return {
   {"mason-org/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup {
-        ensure_installed = { "lua_ls", "terraformls" },
+        ensure_installed = { "lua_ls", "puppet", "terraformls" },
       }
     end,},
   {"neovim/nvim-lspconfig",
@@ -29,6 +29,9 @@ return {
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       require'lspconfig'.lua_ls.setup{
+        capabilities = capabilities,
+      }
+      require'lspconfig'.puppet.setup{
         capabilities = capabilities,
       }
       require'lspconfig'.terraformls.setup{
