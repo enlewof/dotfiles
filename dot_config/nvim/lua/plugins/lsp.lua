@@ -1,7 +1,7 @@
 -- Description: This file contains the configurations for the mason and other lsp plugins.
 -- From https://www.josean.com/posts/neovim-linting-and-formatting
 return {
-  {"williamboman/mason.nvim",
+  {"mason-org/mason.nvim",
     config = function()
       -- import mason
       local mason = require("mason")
@@ -17,7 +17,7 @@ return {
         },
       })
     end,},
-  {"williamboman/mason-lspconfig.nvim",
+  {"mason-org/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup {
         ensure_installed = { "lua_ls", "terraformls" },
