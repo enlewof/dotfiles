@@ -5,7 +5,7 @@
 -- Noice command line
 return {
 	{ "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {} },
-	{ "nvim-telescope/telescope.nvim" },
+	{ "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
