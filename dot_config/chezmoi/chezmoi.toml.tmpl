@@ -1,3 +1,5 @@
+[data]
+  home = "/Users/{{ .chezmoi.username }}"
 {{ if eq .chezmoi.username "alew" -}}
   email = "alew@magnite.com"
 {{else -}}
@@ -8,7 +10,3 @@
 {{else -}}
   brewpath = "/opt/homebrew/bin/brew"
 {{end -}}
-[data]
-  home = "/Users/{{ .chezmoi.username }}"
-  email = "{{ .email }}"
-
