@@ -1,15 +1,14 @@
 {{ if eq .chezmoi.username "alew" -}}
-   email = "alew@magnite.com"
+  email = "alew@magnite.com"
 {{else -}}
-    email = "enlewof@gmail.com"
+  email = "enlewof@gmail.com"
 {{end -}}
-{{- if eq .chezmoi.arch "amd64" -}}
-   brewpath = "/usr/local/bin/brew"
+{{ if eq .chezmoi.arch "amd64" -}}
+  brewpath = "/usr/local/bin/brew"
 {{else -}}
-   brewpath = "/opt/homebrew/bin/brew"
+  brewpath = "/opt/homebrew/bin/brew"
 {{end -}}
 [data]
   home = "/Users/{{ .chezmoi.username }}"
   email = "{{ .email }}"
-  brewpath = "{{ .brewpath }}"
 
