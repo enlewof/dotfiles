@@ -1,7 +1,7 @@
 export EDITOR="nvim"
 
 # Add homebrew to path
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$({{.brewpath}} shellenv)"
 
 # pipx path update
 export PATH="$PATH:{{ .home }}/.local/bin"
