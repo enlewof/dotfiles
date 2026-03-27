@@ -55,3 +55,9 @@ _evalcache mise activate zsh
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="{{ .home}}/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Add bash completions
+autoload -U +X bashcompinit && bashcompinit
+
+# Add terraform completions
+complete -o nospace -C /Users/alew/.local/share/mise/installs/terraform/1.11.4/terraform terraform
