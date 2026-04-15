@@ -1,0 +1,13 @@
+[tools]
+bun = "latest"
+go = "latest"
+java = "23"
+python = "latest"
+ruby = "3.3.8"
+rust = "latest"
+terraform = "latest"
+uv = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]
+python.uv_venv_auto = true
