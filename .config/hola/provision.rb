@@ -11,3 +11,9 @@ macos_dock do
   tilesize 50
   largesize 64
 end
+
+macos_defaults 'show all file extensions' do
+  domain 'com.apple.finder'
+  key 'ShowPathbar'
+  value true
+end
